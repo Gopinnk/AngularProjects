@@ -14,27 +14,25 @@ export class ServerComponentComponent implements OnInit {
   }
 
   ngOnInit() {
-    /*return this._http.get("http://localhost:8080/hello").subscribe(res => {
+    return this._http.get("http://localhost:8080/hello").subscribe(res => {
       console.log(res);
      },
      error => {
       console.log("Some Error Happend");
     });
-    */ 
+    
   }
+  
 
   callRestApi(){
     this._http.get("http://localhost:8080/hello").subscribe(res => {
          console.log(res);
          this.message = res;
     });
+    
     //() => {
-      //console.log("Some Error Happend");
+    //console.log("Some Error Happend");
     //});
   }
-  
- 
-
- }
-
+}
 
